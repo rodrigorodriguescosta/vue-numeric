@@ -4,6 +4,7 @@
     @blur="onBlurHandler"
     @input="onInputHandler"
     @focus="onFocusHandler"
+    @keyup="$emit('keyup', $event)"
     ref="numeric"
     type="tel"
     v-model="amount"
